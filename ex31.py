@@ -60,6 +60,7 @@ class SelfAttentionLayer(nn.Module):
                               key_padding_mask=tgt_key_padding_mask)[0]
         tgt = tgt + self.dropout(tgt2)
         
+        
         return tgt
 
     def forward(self, tgt,
