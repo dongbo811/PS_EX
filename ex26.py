@@ -61,7 +61,7 @@ class SelfAttentionLayer(nn.Module):
         tgt = tgt + self.dropout(tgt2)
         
         return tgt
-
+ 
     def forward(self, tgt,
                 tgt_mask: Optional[Tensor] = None,
                 tgt_key_padding_mask: Optional[Tensor] = None,
